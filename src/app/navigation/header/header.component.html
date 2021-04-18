@@ -1,0 +1,37 @@
+<mat-toolbar class='tool'>
+    <button class="material-icons bar" (click)="sideNav()"
+        [ngStyle]="{'display': open ? 'none' : ''}">view_headline</button>
+    <div class="title">Fitness Tracker</div>
+    <div class="auth-section" fxLayout="row" fxHide.xs>
+        <button mat-menu-item (click)="signupPage()" *ngIf="!(isAuth | async)">
+            <mat-icon>how_to_reg</mat-icon>
+            <span>Signup</span>
+        </button>
+        <button mat-menu-item (click)="loginPage()" *ngIf="!(isAuth | async)">
+            <mat-icon>login</mat-icon>
+            <span>Login</span>
+        </button>
+        <button mat-menu-item (click)=logout() *ngIf="isAuth | async">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </div>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" fxHide.gt-xs>
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="signupPage()" *ngIf="!(isAuth | async)">
+            <mat-icon>how_to_reg</mat-icon>
+            <span>Signup</span>
+        </button>
+        <button mat-menu-item (click)="loginPage()" *ngIf="!(isAuth | async)">
+            <mat-icon>login</mat-icon>
+            <span>Login</span>
+        </button>
+        <button mat-menu-item (click)=logout() *ngIf="isAuth | async">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>

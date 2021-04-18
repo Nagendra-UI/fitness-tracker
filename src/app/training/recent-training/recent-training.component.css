@@ -1,0 +1,21 @@
+.table {
+    padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+input {
+    margin: 20px auto 10px;
+    border-bottom: 1px solid gray;
+}
+
+@media (max-width: 450px) {
+  .table-responsive {
+     overflow-x: auto;
+}
+table {
+      width: 450px;
+    }
+}

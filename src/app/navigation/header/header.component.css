@@ -1,0 +1,35 @@
+mat-toolbar .bar {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+      font-size: 30px;
+    cursor: pointer;
+}
+
+.auth-section button  {
+  width: 130px;
+  text-align: center;
+
+}
+
+
+ mat-toolbar button:focus {
+     outline: none;
+ }
+
+ mat-toolbar.tool {
+    background-color:turquoise;    
+}
+
+mat-toolbar {
+    padding: 5px;
+}
+
+ mat-toolbar .title{
+     margin: 0 auto 0 80px ;
+    color: #fff;
+    font-size: x-large;
+ }

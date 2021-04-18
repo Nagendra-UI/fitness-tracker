@@ -1,0 +1,61 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav, mat-toolbar {
+    padding: 5px;
+}
+
+mat-sidenav {
+    background-color:teal;
+    width: 200px;
+}
+
+
+
+mat-sidenav a, mat-sidenav .close {
+    color: #fff;
+}
+
+ 
+
+ mat-nav-list {
+     padding: 0;
+ }
+
+  mat-toolbar .dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+ }
+
+
+
+
+mat-sidenav button:focus, mat-sidenav-content button:focus {
+    outline: none;
+}
+
+.content {
+    margin: 50px;
+}
+
+.mat-nav-list {
+    margin-top: 15px;
+}
+
+
+
+ mat-toolbar .close {
+    position: absolute;
+    top: 11px;
+    left: 150px;
+    border: 0;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+
+
+
